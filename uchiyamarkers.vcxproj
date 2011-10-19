@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3FA56E22-E343-4EE5-8439-69F761CBE10E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>uchiyamarkers</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Users\antoine\Documents\Visual Studio 2010\Projects\uchiyamarkers\uchiyamarkers\skeletonization;C:\OpenCV\opencv\modules\video\include;C:\OpenCV\opencv\modules\ts\include;C:\OpenCV\opencv\modules\objdetect\include;C:\OpenCV\opencv\modules\ml\include;C:\OpenCV\opencv\modules\legacy\include;C:\OpenCV\opencv\modules\imgproc\include;C:\OpenCV\opencv\modules\highgui\include;C:\OpenCV\opencv\modules\gpu\include;C:\OpenCV\opencv\modules\flann\include;C:\OpenCV\opencv\modules\features2d\include;C:\OpenCV\opencv\modules\core\include;C:\OpenCV\opencv\modules\contrib\include;C:\OpenCV\opencv\modules\calib3d\include;C:\OpenCV\opencv\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\OpenCV\Builds\lib\Debug;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opencv_calib3d231d.lib;opencv_contrib231d.lib;opencv_core231d.lib;opencv_features2d231d.lib;opencv_flann231d.lib;opencv_gpu231d.lib;opencv_haartraining_engined.lib;opencv_highgui231d.lib;opencv_imgproc231d.lib;opencv_legacy231d.lib;opencv_ml231d.lib;opencv_objdetect231d.lib;opencv_ts231d.lib;opencv_video231d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="blob.cpp" />
+    <ClCompile Include="bloblist.cpp" />
+    <ClCompile Include="hashtable.cpp" />
+    <ClCompile Include="imgProcChiang.cpp" />
+    <ClCompile Include="imgProcGM.cpp" />
+    <ClCompile Include="llah.cpp" />
+    <ClCompile Include="llahparam.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="mylib\combination.cpp" />
+    <ClCompile Include="mylib\glwindow.cpp" />
+    <ClCompile Include="mylib\mycam.cpp" />
+    <ClCompile Include="mylib\myimage.cpp" />
+    <ClCompile Include="mylib\mylabel.cpp" />
+    <ClCompile Include="mylib\mymat.cpp" />
+    <ClCompile Include="mylib\mytimer.cpp" />
+    <ClCompile Include="paper.cpp" />
+    <ClCompile Include="paperlist.cpp" />
+    <ClCompile Include="skeletonization\Intersections.cpp" />
+    <ClCompile Include="skeletonization\Skeletonize.cpp" />
+    <ClCompile Include="window.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="blob.h" />
+    <ClInclude Include="bloblist.h" />
+    <ClInclude Include="hashtable.h" />
+    <ClInclude Include="imgProcChiang.h" />
+    <ClInclude Include="imgProcGM.h" />
+    <ClInclude Include="LLAH.h" />
+    <ClInclude Include="llahparam.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="mylib\combination.h" />
+    <ClInclude Include="mylib\glwindow.h" />
+    <ClInclude Include="mylib\mycam.h" />
+    <ClInclude Include="mylib\myimage.h" />
+    <ClInclude Include="mylib\mylabel.h" />
+    <ClInclude Include="mylib\mymat.h" />
+    <ClInclude Include="mylib\mytimer.h" />
+    <ClInclude Include="mylib\opencvpath.h" />
+    <ClInclude Include="paper.h" />
+    <ClInclude Include="paperlist.h" />
+    <ClInclude Include="skeletonization\Intersections.h" />
+    <ClInclude Include="skeletonization\Skeletonize.h" />
+    <ClInclude Include="window.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

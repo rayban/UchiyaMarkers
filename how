@@ -1,0 +1,148 @@
+[33mcommit 7555c35d13219896d1b5e86aa1041d2baee58349[m
+Author: Guillaume Moreau <guillaume.moreau@ec-nantes.fr>
+Date:   Wed Jul 13 12:02:42 2011 +0200
+
+    mise à jour du fichier de projet
+
+[33mcommit cf62a54e8a2166565bd080fa6e3951b9d8e2e8fa[m
+Author: Guillaume Moreau <guillaume.moreau@ec-nantes.fr>
+Date:   Wed Jul 13 12:02:25 2011 +0200
+
+    implementation du seuillage rapide de Bruce, Balch & Voloso, IROS 2000. Encore quelques bugs
+
+[33mcommit d638c9110ace77de45dfcb5fdb38db693e8b5d0c[m
+Author: Guillaume Moreau <guillaume.moreau@ec-nantes.fr>
+Date:   Wed Jul 13 10:47:19 2011 +0200
+
+    sauvegarde des couleurs definies en foreground dans un fichier filters.dat
+
+[33mcommit 0f6e37c7b0d2ee9d12d500f1533c303031924023[m
+Merge: 5be59e1 44be69b
+Author: Guillaume Moreau <guillaume.moreau@ec-nantes.fr>
+Date:   Mon Jun 20 10:23:11 2011 +0200
+
+    Merge branch 'chiangAlgorithm'
+    
+    Conflicts:
+    	RandomDotMarkers.xcodeproj/project.xcworkspace/xcuserdata/moreau.xcuserdatad/UserInterfaceState.xcuserstate
+
+[33mcommit 5be59e1826a0614960cecfdbc86e3fe59afb8419[m
+Author: Guillaume Moreau <guillaume.moreau@ec-nantes.fr>
+Date:   Mon Jun 20 10:22:43 2011 +0200
+
+    UI state
+
+[33mcommit 44be69b6266b3797436aa86b54b7dca89606d260[m
+Author: Guillaume Moreau <guillaume.moreau@ec-nantes.fr>
+Date:   Mon Jun 20 10:20:45 2011 +0200
+
+    last commit before merging
+
+[33mcommit aa1c1a5e4dd75694ff99d9ea43b7eaf53d479f18[m
+Author: Guillaume Moreau <guillaume.moreau@ec-nantes.fr>
+Date:   Mon Jun 20 10:07:07 2011 +0200
+
+    affichage des valeurs de couleur par nb d'occurences croissantes
+
+[33mcommit 4473e01f9d5ae8bfeeb115bd852e0054f8f1dece[m
+Author: Guillaume Moreau <guillaume.moreau@ec-nantes.fr>
+Date:   Mon Jun 20 09:43:51 2011 +0200
+
+    comptage des occurences et affichage des couleurs de façon unique.
+
+[33mcommit 3a495912c29be29e08207caf583a80db51878878[m
+Author: Guillaume Moreau <guillaume.moreau@ec-nantes.fr>
+Date:   Mon Jun 20 08:15:07 2011 +0200
+
+    compilation de la partie Chiang
+
+[33mcommit 607a3ec1cc1832c1d479f06f9a57df434b9b696c[m
+Author: Guillaume Moreau <guillaume.moreau@ec-nantes.fr>
+Date:   Mon Jun 20 07:57:13 2011 +0200
+
+    ajout du code donne par Sebastien
+
+[33mcommit 1b5c34afe6c6af9b17ef267dc727dd31273d1cca[m
+Merge: 888d4c5 6c51800
+Author: Guillaume Moreau <guillaume.moreau@ec-nantes.fr>
+Date:   Fri Jun 17 03:37:39 2011 +0200
+
+    Merge branch 'planNH'
+    
+    Conflicts:
+    	RandomDotMarkers.xcodeproj/project.xcworkspace/xcuserdata/moreau.xcuserdatad/UserInterfaceState.xcuserstate
+
+[33mcommit 888d4c5e0c0b22826b1353e417631b715167970e[m
+Author: Guillaume Moreau <guillaume.moreau@ec-nantes.fr>
+Date:   Fri Jun 17 03:36:50 2011 +0200
+
+    mise a jour des fichiers
+
+[33mcommit 6c5180079c5dc647279fb3482937428bf850ed2e[m
+Author: Guillaume Moreau <guillaume.moreau@ec-nantes.fr>
+Date:   Fri Jun 17 03:17:29 2011 +0200
+
+    seuillage sur Yuv plutot que RGB. bcp plus efficace sur les google maps
+
+[33mcommit 14b97c9e386c569392f166d36b30bfacb273140c[m
+Author: Guillaume Moreau <moreaug44@gmail.com>
+Date:   Fri May 20 10:08:15 2011 +0200
+
+    utilisation de mes bouts de code pour la detection de routes
+
+[33mcommit 5fbcb979277705ae90aac7afd6f3b52bb33d19cc[m
+Author: Guillaume Moreau <moreaug44@gmail.com>
+Date:   Thu May 19 17:39:24 2011 +0200
+
+    added new files for build
+
+[33mcommit 07eb527d593c86bc65a07ea7a5bd421f93912458[m
+Author: Guillaume Moreau <moreaug44@gmail.com>
+Date:   Thu May 19 17:38:56 2011 +0200
+
+    added subclass for testing various image processing tricks
+
+[33mcommit 04267e4bf41c525be10ddb0cb45327216d23e486[m
+Author: Jean-Marie Normand <jean-marie.normand@ec-nantes.fr>
+Date:   Thu May 19 17:26:27 2011 +0200
+
+    Threshold modification via keyboard
+
+[33mcommit 48d6b1d7832c3f2773f079a6ca6a67ea6aa3e358[m
+Author: Jean-Marie Normand <jean-marie.normand@ec-nantes.fr>
+Date:   Thu May 19 09:49:40 2011 +0200
+
+    Added option --video to be consistent.
+
+[33mcommit 1ad0d50d977216512c9cae7a6b0f5d3fbdfe9c15[m
+Merge: f603f3c 629a062
+Author: Jean-Marie Normand <jean-marie.normand@ec-nantes.fr>
+Date:   Thu May 19 09:42:37 2011 +0200
+
+    Added video support. Added keys U/I to change threshold for binarization. Merge done with Guillaum's code.
+
+[33mcommit f603f3cadadea281f0d8de33f8b5a946748a28c1[m
+Author: Jean-Marie Normand <jean-marie.normand@ec-nantes.fr>
+Date:   Thu May 19 09:25:54 2011 +0200
+
+    Added video support. Added keys U/I to change threshold for binarization.
+
+[33mcommit 629a062cd75346763b4497368e684131f9b04224[m
+Author: Guillaume Moreau <moreaug44@gmail.com>
+Date:   Thu May 19 09:08:25 2011 +0200
+
+    added a	--thres argument to specify thresholding level in command line
+
+[33mcommit 5ca10ceef8259f0fbbb212d42c924e5d23f57d32[m
+Author: Guillaume Moreau <moreaug44@gmail.com>
+Date:   Thu May 19 08:50:06 2011 +0200
+
+    modified command line arguments to use several cameras or image size
+
+[33mcommit 910fa5bdf8b6903b9af7df67e4d6ddda319ffa8c[m
+Author: Jean-Marie Normand <jean-marie.normand@ec-nantes.fr>
+Date:   Wed May 11 17:04:07 2011 +0200
+
+    Adding the CustomCameraManipulator files
+
+[33mcommit
